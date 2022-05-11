@@ -24,7 +24,7 @@ import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 @EnableBatchProcessing
 public class BatchConfig {
 
-
+    public static String tableName = "all_beauty";
     @Autowired
     public JobBuilderFactory jobBuilderFactory;
 
