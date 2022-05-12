@@ -37,7 +37,7 @@ public class ProductWriter implements ItemWriter<Product>, StepExecutionListener
     @Override
     public void write(List<? extends Product> list) throws Exception {
 //        list.stream().forEach(System.out::println);
-        //System.out.println("chunk written");
+        System.out.println("chunk written");
         Statement stmt = connection.createStatement();
         stmt.execute(String.format("CREATE TABLE IF NOT EXISTS %s(main_cat varchar(40), title varchar(100), asin char(10) not null primary key, category varchar(40), price varchar(10), imageURLHighRes varchar(120))default charset=utf8;", BatchConfig.tableName));
 

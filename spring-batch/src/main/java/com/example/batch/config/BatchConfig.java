@@ -34,7 +34,7 @@ public class BatchConfig {
 
     @Bean
     public ItemReader<JsonNode> itemReader() {
-        return new JsonFileReader("spring-batch/src/main/resources/data/meta_Gift_Cards.json");
+        return new JsonFileReader("spring-batch/src/main/resources/data/meta_All_Beauty.json");
     }
 
     @Bean
